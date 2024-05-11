@@ -6,10 +6,10 @@ LIGHT_BLUE='\033[1;36m'
 NO_COLOR='\033[0m'
 
 echo "\n${LIGHT_BLUE}!${NO_COLOR} - Updating Remote"
-# git remote update
+git remote update
 
 echo "\n${LIGHT_BLUE}!${NO_COLOR} - Pulling updates"
-# git pull origin master
+git pull origin master
 
 # echo "\n${LIGHT_BLUE}!${NO_COLOR} - Testing"
 # bun test 

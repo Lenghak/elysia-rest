@@ -11,7 +11,7 @@ bun run lint || exit $
 echo "${GREEN}✔${NO_COLOR} Done Running Lint"
 
 echo "${LIGHT_BLUE}!${NO_COLOR} Formatting Staged Files"
-bunx biome check --staged || bash
+bunx biome check --staged --no-errors-on-unmatched
 
 echo "${GREEN} Formatted" ${staged}
 echo "${GREEN}✔${NO_COLOR} Done Formatting"

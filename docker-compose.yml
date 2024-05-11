@@ -1,0 +1,14 @@
+services:
+  redis-cache:
+    image: redis:latest
+    ports:
+      - 5379:6379
+    volumes:
+      - ./data/redis:/data/redis
+
+  redis-queue:
+    image : redis:latest
+    ports: 
+      - 5380:6379
+    volumes:
+      - ./data/queue:/data/queue
